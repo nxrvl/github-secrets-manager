@@ -1,0 +1,33 @@
+{
+  "name": "github-secrets-backend",
+  "version": "1.0.0",
+  "description": "Backend for GitHub Secrets Manager",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "init-db": "ts-node src/initDb.ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "libsodium-wrappers": "^0.7.13",
+    "sqlite3": "^5.1.6",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.19",
+    "@types/libsodium-wrappers": "^0.7.11",
+    "@types/node": "^20.8.6",
+    "@types/sqlite3": "^3.1.9",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
